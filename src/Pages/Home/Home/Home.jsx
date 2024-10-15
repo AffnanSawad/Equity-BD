@@ -1,9 +1,14 @@
+import Banner from "../Banner/Banner";
+import Marquees from "../Marquee/Marquees";
+import Marquee from "../Marquee/Marquees";
 
 
 const Home = () => {
     return (
         <div>
-            <h1>home</h1>
+          <Marquees></Marquees>
+           <Banner></Banner>
+          
         </div>
     );
 };
