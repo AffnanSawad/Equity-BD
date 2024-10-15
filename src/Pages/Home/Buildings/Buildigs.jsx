@@ -2,7 +2,7 @@
 
 const Buildigs = () => {
     return (
-        <div className="mt-16">
+        <div className="mt-4 lg:mt-4">
         
         <div>
             <h1 className="text-4xl font-bold text-red-500 text-center">What We Build?</h1>
@@ -11,11 +11,11 @@ const Buildigs = () => {
             </p>
         </div>
 
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5  my-10 ml-20">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-2 gap-5  my-10 ">
 
     
             {/* card 1 */}
-            <div className="card card-compact bg-base-100 w-96 shadow-xl">
+            <div className="card card-compact bg-base-100 w-96 shadow-xl lg:ml-20">
   <figure>
     <img
       src="https://i.ibb.co.com/7pWJcnw/Detached-singlefamily-home-in-a-suburban-neighborhood-810x540.jpg"
@@ -34,7 +34,7 @@ const Buildigs = () => {
 
 
 {/* card 2 */}
-<div className="card card-compact bg-base-100 w-96 shadow-xl">
+<div className="card card-compact bg-base-100 w-96 shadow-xl lg:ml-20">
   <figure>
     <img
       src="https://i.ibb.co.com/5k4sfdB/urban-architecture-office-building-business-600nw-1339962440.webp"
@@ -51,7 +51,7 @@ const Buildigs = () => {
 
 
 {/* card 3 */}
-<div className="card card-compact bg-base-100 w-96 shadow-xl">
+<div className="card card-compact bg-base-100 w-96 shadow-xl lg:ml-20">
   <figure>
     <img
       src="https://i.ibb.co.com/ZzKxRzv/industrial-park-factory-building-warehouse.jpg"

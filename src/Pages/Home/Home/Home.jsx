@@ -1,8 +1,11 @@
 import Banner from "../Banner/Banner";
 import Buildigs from "../Buildings/Buildigs";
 import Coupons from "../Coupons/Coupons";
+import Map from "../Map/Map";
+
 import Marquees from "../Marquee/Marquees";
-import Marquee from "../Marquee/Marquees";
+
+
 
 
 const Home = () => {
@@ -12,6 +15,9 @@ const Home = () => {
            <Banner></Banner>
            <Buildigs></Buildigs>
            <Coupons></Coupons>
+           <Map></Map>
+          
+          
           
         </div>
     );
