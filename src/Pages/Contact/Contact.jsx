@@ -3,17 +3,9 @@
 const Contact = () => {
     return (
         <div>
-           <div
-  className="hero min-h-screen"
-  style={{
-    backgroundImage: "url(https://i.ibb.co.com/F3GWZdc/2824345.jpg)",
-  }}>
-  
-        </div>
+     <img src="https://i.ibb.co.com/NLrS0QJ/Contact-Us-1.jpg" alt="" />
 
-        <div className="text-4xl font-bold text-center underline text-red-600">
-            <h1>Contact Us</h1>
-        </div>
+      
 
         <table className="table mt-20 max-w-7xl mx-auto mb-20 ">
           {/* head */}
@@ -23,7 +15,7 @@ const Contact = () => {
               <th>Name</th>
               <th>Job</th>
               <th>Email</th>
-              <th>Number</th>
+             
             </tr>
           </thead>
           <tbody>
@@ -33,7 +25,7 @@ const Contact = () => {
               <td>Cy Ganderton</td>
               <td>Managing Director</td>
               <td>cygan@gmail.com</td>
-              <td>+8801234</td>
+             
             </tr>
             {/* row 2 */}
             <tr className="hover">
@@ -41,7 +33,7 @@ const Contact = () => {
               <td>Hart Hagerty</td>
               <td>Chief Executive Officer </td>
               <td>hart22@gmail.com</td>
-              <td>+8801235</td>
+            
             </tr>
             {/* row 3 */}
             <tr>
@@ -49,7 +41,7 @@ const Contact = () => {
               <td>Brice Swyre</td>
               <td>Manager</td>
               <td>brice1981@gmail.com</td>
-              <td>+8801236</td>
+            
             </tr>
           </tbody>
         </table>
