@@ -6,6 +6,7 @@ import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home/Home";
 import Contact from "../Pages/Contact/Contact";
 import About from "../Pages/About/About";
+import Apartment from "../Pages/Apartment/Apartment";
 
 //   export korte hbe
   export const router = createBrowserRouter([
@@ -28,6 +29,10 @@ import About from "../Pages/About/About";
         {
           path: '/about',
           element: <About></About>
+        },
+        {
+          path: '/apartment',
+          element: <Apartment></Apartment>
         }
 
 
