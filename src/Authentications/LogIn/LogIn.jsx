@@ -1,8 +1,16 @@
+import { useContext } from "react";
 import { FcGoogle } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../Providers/Providers";
+import Swal from "sweetalert2";
 
 
 const LogIn = () => {
+
+    // importing from providers
+    const{existingUser,googleLogIn} = useContext(AuthContext)
+
+    const navigate = useNavigate();
     
     // 
     const handleLogin=(e)=>{
@@ -13,8 +21,67 @@ const LogIn = () => {
         const password = e.target.password.value;
 
         console.log(email,password);
+       
+        // login
+        existingUser(email,password)
+
+        .then(result => {
+
+            console.log(result.user);
+
+             // form reset
+        e.target.reset();
+
+
+            // alert
+            Swal.fire({
+                title: 'Successfully Logged In!',
+                // text: 'Successfully Logged In!',
+                icon: 'success',
+                confirmButtonText: 'Cool'
+              })
+
+              navigate('/')
+        })
+
+
+        .catch( error=>{
+
+            console.log(error)
+        })
+
 
     }
+
+
+    // google
+    const handleGoogle = ()=>{
+
+        googleLogIn()
+
+        .then(result => {
+
+            console.log(result.user);
+    
+            Swal.fire({
+              title: "  Logged In!",
+              text: "You Are Successfully Logged In!",
+              icon: "success"
+            });
+    
+            //    navigate
+            navigate('/');
+    
+        
+        })
+    
+        .catch(error=>{
+            console.log(error.message)
+        })
+    }
+
+    
+    
 
 
 
@@ -53,7 +120,7 @@ const LogIn = () => {
             
                <h3 className="text-center my-4 font-bold text-xl"> <hr /> </h3>
 
-                <p>  <button className="btn btn-ghost mt-2 bg-opacity-30 bg-slate-700 w-full font-bold" >  <FcGoogle />  Google  </button> </p>
+                <p>  <button onClick={handleGoogle} className="btn btn-ghost mt-2 bg-opacity-30 bg-slate-700 w-full font-bold" >  <FcGoogle />  Google  </button> </p>
 
 
               </div>

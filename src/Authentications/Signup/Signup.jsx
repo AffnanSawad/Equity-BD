@@ -1,8 +1,14 @@
-import { Link } from "react-router-dom";
-
+import { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../Providers/Providers";
+import Swal from 'sweetalert2'
 
 const Signup = () => {
+      
+    // importing
+    const {createUser} = useContext(AuthContext)
 
+    const navigate = useNavigate();
     
     // form handler
     const handleSignup = e => {
@@ -14,6 +20,36 @@ const Signup = () => {
         const password =e.target.password.value; 
     
         console.log(name,email,password)
+
+
+        // signUp
+        createUser(email,password)
+
+        .then(result => {
+
+            console.log(result.user);
+
+             // form reset
+        e.target.reset();
+
+
+            // alert
+            Swal.fire({
+                title: 'Registered Successfully!',
+                // text: 'Successfully Sign In!',
+                icon: 'success',
+                confirmButtonText: 'Cool'
+              })
+
+              navigate('/');
+        })
+
+
+        .catch( error=>{
+
+            console.log(error.message)
+        })
+
 
 
     }

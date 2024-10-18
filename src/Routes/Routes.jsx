@@ -9,6 +9,7 @@ import About from "../Pages/About/About";
 import Apartment from "../Pages/Apartment/Apartment";
 import LogIn from "../Authentications/LogIn/LogIn";
 import Signup from "../Authentications/Signup/Signup";
+import PrivateRoute from "../Authentications/PrivateRoute/PrivateRoute";
 
 //   export korte hbe
   export const router = createBrowserRouter([
@@ -34,7 +35,7 @@ import Signup from "../Authentications/Signup/Signup";
         },
         {
           path: '/apartment',
-          element: <Apartment></Apartment>
+          element: <PrivateRoute><Apartment></Apartment></PrivateRoute>
         },
         {
           path: '/login',

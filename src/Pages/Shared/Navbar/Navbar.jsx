@@ -1,7 +1,40 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../Authentications/Providers/Providers";
+import auth from "../../../firebase/firebse.config";
+import Swal from "sweetalert2";
+import { CgProfile } from "react-icons/cg";
 
 
 const Navbar = () => {
+
+  // import
+  const {user,logOut} = useContext(AuthContext);
+
+
+  // handle logOut
+  const handleLogOut = ()=> {
+
+    logOut(auth)
+    .then(() => {
+
+        console.log("log out successfully");
+        
+        // swal
+        Swal.fire({
+          title: "  Logged Out!",
+          text: "You Are Successfully Logged Out!",
+          icon: "success"
+        });
+    })
+
+    .catch(error=>{
+        console.log(error.message)
+    })
+
+    // navigate('/')
+    
+}
    
     // navLinks
 
@@ -68,9 +101,63 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <div className="navbar-end">
-          <Link to='/login'> <a className="btn btn-accent">LogIn</a>  </Link>
+
+        {/* login / logout button */}
+        {
+        user ? 
+   <>
+   
+   <div className="navbar-end mr-20">
+   <div className=" dropdown dropdown-end">
+      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+        <div className="w-10 rounded-full">
+          <img
+            alt="Tailwind CSS Navbar component"
+            src="https://i.ibb.co.com/cxh3cQp/307ce493-b254-4b2d-8ba4-d12c080d6651.jpg" />
         </div>
+      </div>
+      <ul
+        tabIndex={0}
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 mb-44 w-52 p-2 shadow text-xl font-bold">
+
+          
+       <Link>
+       <button className="btn btn-outline my-4 w-full">
+       <div className="flex mr-3 py-3">
+         <CgProfile className="mt-1 ml-3" /><li className="ml-2 mt-1"> Dashboard</li>
+         </div>
+       </button>
+       
+       </Link>
+        
+        <button className="btn btn-outline btn-error" onClick={handleLogOut}>
+        Log Out
+        </button>
+       
+      </ul>
+    </div>
+   </div>
+
+   
+   
+   </>
+
+      :
+    
+
+<div className="navbar-end">
+<Link to='/login'> <a className="btn btn-primary text-white">Log In</a>  </Link>
+</div>
+
+
+       }
+
+
+
+   
+
+
+
       </div>
     );
 };
