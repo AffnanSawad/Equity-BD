@@ -69,7 +69,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn btn-accent">LogIn</a>
+          <Link to='/login'> <a className="btn btn-accent">LogIn</a>  </Link>
         </div>
       </div>
     );
