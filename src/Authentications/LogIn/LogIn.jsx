@@ -47,7 +47,7 @@ const LogIn = () => {
 
         .catch( error=>{
 
-            console.log(error)
+            console.log(error.message)
         })
 
 
@@ -134,6 +134,7 @@ const LogIn = () => {
 
 
           </div>
+         
         </div>
       </div>
     );

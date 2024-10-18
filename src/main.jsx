@@ -14,11 +14,13 @@ import Providers from './Authentications/Providers/Providers.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
 
-
+ 
+ {/* provider = Authentication */}
  <Providers>
  <RouterProvider router={router} />
  </Providers>
+ {/* provider = Authentication */}
 
- 
+
   </StrictMode>,
 )

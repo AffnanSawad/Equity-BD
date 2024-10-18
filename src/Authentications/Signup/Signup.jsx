@@ -7,7 +7,8 @@ const Signup = () => {
       
     // importing
     const {createUser} = useContext(AuthContext)
-
+   
+    // navigate = click korar por navigate kore kthai ni jabe tar jnno.
     const navigate = useNavigate();
     
     // form handler
