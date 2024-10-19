@@ -10,6 +10,8 @@ const PrivateRoute = ({children}) => {
     //  import user & loading by context:
     const {loading,user} = useContext(AuthContext);
 
+   
+
 
     if(loading){
 

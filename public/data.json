@@ -1,0 +1,165 @@
+[
+    {
+      "id": 1,
+      "name": "Sunset Apartment",
+      "price": 250000,
+      "size": "1200 sqft",
+      "image": "https://i.ibb.co.com/bLY5bBp/3d-rendering-luxury-modern-living-room-with-fabric-sofa.jpg",
+      "location": "Dhaka, Bangladesh",
+      "type": "Apartment"
+    },
+    {
+      "id": 2,
+      "name": "Skyline Office",
+      "price": 500000,
+      "size": "3000 sqft",
+      "image": "https://i.ibb.co.com/KLJy94C/benjamin-child-0s-T9-Yh-Ng-SEs-unsplash.jpg",
+      "location": "Chittagong, Bangladesh",
+      "type": "Office"
+    },
+    {
+      "id": 3,
+      "name": "Industrial Complex A",
+      "price": 750000,
+      "size": "5000 sqft",
+      "image": "https://i.ibb.co.com/Csb0zvx/homa-appliances-XDK4na-Bbgw-unsplash.jpg",
+      "location": "Narayanganj, Bangladesh",
+      "type": "Industry"
+    },
+    {
+      "id": 4,
+      "name": "Lakeside Apartment",
+      "price": 180000,
+      "size": "900 sqft",
+      "image": "https://i.ibb.co.com/8z9VLk0/bangkok-thailand-august-12-2016-beautiful-luxury-living-room.jpg",
+      "location": "Sylhet, Bangladesh",
+      "type": "Apartment"
+    },
+    {
+      "id": 5,
+      "name": "Downtown Office",
+      "price": 400000,
+      "size": "2000 sqft",
+      "image": "https://i.ibb.co.com/Mfm4XLf/luca-bravo-9l-326-FISzk-unsplash.jpg",
+      "location": "Dhaka, Bangladesh",
+      "type": "Office"
+    },
+    {
+      "id": 6,
+      "name": "Textile Industry Hub",
+      "price": 850000,
+      "size": "6000 sqft",
+      "image": "https://i.ibb.co.com/44BGpfh/annie-spratt-RYZff-q-Ul0-Y-unsplash.jpg",
+      "location": "Gazipur, Bangladesh",
+      "type": "Industry"
+    },
+    {
+      "id": 7,
+      "name": "Horizon Apartment",
+      "price": 220000,
+      "size": "1000 sqft",
+      "image": "https://i.ibb.co.com/D5tp8cT/cozy-living-room-interior-with-panoramic-window.jpg",
+      "location": "Rajshahi, Bangladesh",
+      "type": "Apartment"
+    },
+    {
+      "id": 8,
+      "name": "Riverside Office",
+      "price": 550000,
+      "size": "3200 sqft",
+      "image": "https://i.ibb.co.com/qmnbyVy/lycs-architecture-U2-BI3-GMn-SSE-unsplash.jpg",
+      "location": "Khulna, Bangladesh",
+      "type": "Office"
+    },
+    {
+      "id": 9,
+      "name": "Steel Industry Plant",
+      "price": 950000,
+      "size": "7000 sqft",
+      "image": "https://i.ibb.co.com/tZ9kWQz/ant-rozetsky-SLIFI67jv5k-unsplash.jpg",
+      "location": "Narayanganj, Bangladesh",
+      "type": "Industry"
+    },
+    {
+      "id": 10,
+      "name": "Mountain View Apartment",
+      "price": 270000,
+      "size": "1300 sqft",
+      "image": "https://i.ibb.co.com/vPGg3rT/istockphoto-1400097058-612x612.webp",
+      "location": "Bandarban, Bangladesh",
+      "type": "Apartment"
+    },
+    {
+      "id": 11,
+      "name": "Metro Office Suite",
+      "price": 600000,
+      "size": "3500 sqft",
+      "image": "https://i.ibb.co.com/59RzLbG/nastuh-abootalebi-e-HD8-Y1-Znfpk-unsplash.jpg",
+      "location": "Dhaka, Bangladesh",
+      "type": "Office"
+    },
+    {
+      "id": 12,
+      "name": "Chemical Industry Park",
+      "price": 1200000,
+      "size": "9000 sqft",
+      "image": "https://i.ibb.co.com/R4St2Y3/xyzcharlize-7b49gfsg-QZY-unsplash-1.jpg",
+      "location": "Chittagong, Bangladesh",
+      "type": "Industry"
+    },
+    {
+      "id": 13,
+      "name": "Seaside Apartment",
+      "price": 260000,
+      "size": "1150 sqft",
+      "image": "https://i.ibb.co.com/qCGk9KF/jarek-ceborski-jn7u-Ve-Cdf6-U-unsplash.jpg",
+      "location": "Cox's Bazar, Bangladesh",
+      "type": "Apartment"
+    },
+    {
+      "id": 14,
+      "name": "Corporate Office Tower",
+      "price": 700000,
+      "size": "4000 sqft",
+      "image": "https://i.ibb.co.com/N3C3Qx5/jason-goodman-n-F0n-Quq-Bsr-I-unsplash.jpg",
+      "location": "Dhaka, Bangladesh",
+      "type": "Office"
+    },
+    {
+      "id": 15,
+      "name": "Electronics Manufacturing Industry",
+      "price": 1400000,
+      "size": "10000 sqft",
+      "image": "https://i.ibb.co.com/HztLfgY/homa-appliances-p-WUy-HVJg-Lhg-unsplash.jpg",
+      "location": "Gazipur, Bangladesh",
+      "type": "Industry"
+    },
+    {
+      "id": 16,
+      "name": "Hilltop Apartment",
+      "price": 300000,
+      "size": "1400 sqft",
+      "image": "https://i.ibb.co.com/JF2JkWS/hannah-busing-U-k6-XLlml1-I-unsplash.jpg",
+      "location": "Chittagong, Bangladesh",
+      "type": "Apartment"
+    },
+    {
+      "id": 17,
+      "name": "Business Hub Office",
+      "price": 480000,
+      "size": "2700 sqft",
+      "image": "https://i.ibb.co.com/PmCWcJ7/serviced-office.webp",
+      "location": "Sylhet, Bangladesh",
+      "type": "Office"
+    },
+    {
+      "id": 18,
+      "name": "Automotive Industry Zone",
+      "price": 1300000,
+      "size": "8500 sqft",
+      "image": "https://i.ibb.co.com/Csb0zvx/homa-appliances-XDK4na-Bbgw-unsplash.jpg",
+      "location": "Dhaka, Bangladesh",
+      "type": "Industry"
+    }
+  ]
+  
