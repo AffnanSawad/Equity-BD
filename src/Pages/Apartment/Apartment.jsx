@@ -53,7 +53,7 @@ const Apartment = () => {
     
     1. TabPanel e type onusare mapping.
     
-    2. Card bosai dewa
+    2. Card bosai dewa .
     
     */}
     
@@ -92,7 +92,8 @@ const Apartment = () => {
  </div>
     </TabPanel>
 
-  {/* industry */}
+
+  {/* industry . */}
   <TabPanel>
   <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-5 my-5'>
  {
@@ -106,6 +107,9 @@ const Apartment = () => {
     }
  </div>
   </TabPanel>
+
+
+  {/* Tabpanels Ended */}
 
 
 
