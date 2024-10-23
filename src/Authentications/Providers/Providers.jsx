@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, linkWithCredential, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import auth from "../../firebase/firebse.config";
 import { GoogleAuthProvider } from "firebase/auth";
@@ -55,14 +55,21 @@ const Providers = ({children}) => {
          useEffect( ()=> {
   
             const unsubscribe=  onAuthStateChanged(auth, (currentuser) => {
+                        
                 if (currentuser) {
                  
-                 setuser(currentuser)
-                } 
-                else {
-                setuser(null)
+                 setuser(currentuser);
+
+               } 
+
+               else {
+
+                  setuser(null)
+                
                 }
+               
                 setloading(false)
+
               });
       
               return ()=> {

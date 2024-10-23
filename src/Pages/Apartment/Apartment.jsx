@@ -5,13 +5,23 @@ import ApartMentCard from './ApartMentCard/ApartMentCard';
 
 const Apartment = () => {
 
-  // state
+  // Different Tab e Card show korar Steps.
+
+  //  1. State declare kora.
+  //  2. useEffect diye data Fetch kora.
+  //  3. data fitler kora.
+  //  4. fitler data er variable take TabPanel e MAPPING kora.
+  //  5. Mapping e Card Component Bosano..
+
+       //  **********Starting**********************
+  
+  // //  1. State declare kora.
   const[cards,setcards]=useState([]);
 
-  // fetching = loading data
+   //  2. useEffect diye data Fetch kora.
   useEffect( ()=>{
 
-    fetch('data.json')
+    fetch('http://localhost:5000/menu')
 
     .then(res=> res.json())
 
@@ -21,7 +31,10 @@ const Apartment = () => {
 
   } ,[] )
 
+ 
+ 
   // filtering data by their type
+  //  3. data fitler kora.
 
   const apartment = cards.filter(item=> item.type ==='Apartment')
   const office = cards.filter(item=> item.type ==='Office')
@@ -56,6 +69,9 @@ const Apartment = () => {
     2. Card bosai dewa .
     
     */}
+
+{/* //  4. fitler data er variable take TabPanel e MAPPING kora.
+//  5. Mapping e Card Component Bosano.. */}
     
     {/* apartment */}
     <TabPanel>

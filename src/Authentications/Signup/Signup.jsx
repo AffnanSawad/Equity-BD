@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/Providers";
 import Swal from 'sweetalert2'
 
@@ -10,6 +10,10 @@ const Signup = () => {
    
     // navigate = click korar por navigate kore kthai ni jabe tar jnno.
     const navigate = useNavigate();
+
+     // login korar por jate sathe sathe private route component e cle jai.
+     const location = useLocation();
+     console.log(location);
     
     // form handler
     const handleSignup = e => {
@@ -33,6 +37,9 @@ const Signup = () => {
              // form reset
         e.target.reset();
 
+      // login korar por jate sathe sathe private route component e cle jai.
+        navigate(location?.state ? location?.state : '/')
+
 
             // alert
             Swal.fire({
@@ -42,7 +49,7 @@ const Signup = () => {
                 confirmButtonText: 'Cool'
               })
 
-              navigate('/');
+           
         })
 
 

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { FcGoogle } from "react-icons/fc";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/Providers";
 import Swal from "sweetalert2";
 
@@ -11,6 +11,11 @@ const LogIn = () => {
     const{existingUser,googleLogIn} = useContext(AuthContext)
 
     const navigate = useNavigate();
+   
+    // login korar por jate sathe sathe private route component e cle jai.
+    const location = useLocation();
+
+    console.log(location);
     
     // 
     const handleLogin=(e)=>{
@@ -27,10 +32,11 @@ const LogIn = () => {
 
         .then(result => {
 
-            console.log(result.user);
-
+          console.log(result.user)
              // form reset
-        e.target.reset();
+            e.target.reset();
+
+        navigate(location?.state ? location?.state : '/')
 
 
             // alert
@@ -41,7 +47,7 @@ const LogIn = () => {
                 confirmButtonText: 'Cool'
               })
 
-              navigate('/')
+            
         })
 
 
@@ -70,7 +76,7 @@ const LogIn = () => {
             });
     
             //    navigate
-            navigate('/');
+            navigate(location?.state ? location?.state : '/')
     
         
         })

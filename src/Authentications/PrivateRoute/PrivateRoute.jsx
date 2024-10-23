@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../Providers/Providers";
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 
 
 
@@ -9,6 +9,9 @@ const PrivateRoute = ({children}) => {
 
     //  import user & loading by context:
     const {loading,user} = useContext(AuthContext);
+    
+    // login korar por jate sathe sathe private route component e cle jai.
+    const location = useLocation();
 
    
 
@@ -18,12 +21,13 @@ const PrivateRoute = ({children}) => {
         return <span className="loading loading-bars loading-lg"></span>
     }
 
-    if(user){
+    if(user?.email){
 
         return children;
     }
-
-    return <Navigate to='/login'></Navigate>
+  
+    // login korar por jate sathe sathe private route component e cle jai.
+    return <Navigate state={location.pathname} to='/login' replace></Navigate>
 
 
    
