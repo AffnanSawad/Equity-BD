@@ -3,12 +3,12 @@ import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/Providers";
 import Swal from "sweetalert2";
-
+import axios from 'axios';
 
 const LogIn = () => {
 
     // importing from providers
-    const{existingUser,googleLogIn} = useContext(AuthContext)
+    const{user,existingUser,googleLogIn} = useContext(AuthContext)
 
     const navigate = useNavigate();
    
@@ -31,8 +31,22 @@ const LogIn = () => {
         existingUser(email,password)
 
         .then(result => {
+             
 
-          console.log(result.user)
+          // jwt
+          const loggedUser = result.user;
+          console.log('logging token',loggedUser);
+
+          const user = {email};
+
+          axios.post('http://localhost:5000/jwt', user)
+          .then(res=>{
+             
+            console.log(res.data);
+
+
+          })
+          
              // form reset
             e.target.reset();
 

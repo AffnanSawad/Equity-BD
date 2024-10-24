@@ -77,7 +77,7 @@ const Navbar = () => {
 
   //  //  ENDS HERE: light- dark theme method
 
-  
+
    
     // navLinks
 
@@ -150,8 +150,8 @@ const Navbar = () => {
         user ? 
    <>
    
-   <div className="navbar-end mr-20">
-   <div className=" dropdown dropdown-end">
+   <div className="navbar-end lg:mr-5 ">
+   <div className=" dropdown dropdown-end ">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">
           <img
