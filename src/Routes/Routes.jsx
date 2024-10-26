@@ -12,6 +12,8 @@ import Signup from "../Authentications/Signup/Signup";
 import PrivateRoute from "../Authentications/PrivateRoute/PrivateRoute";
 import Dashboard from "../Layout/Dashboard";
 import Cart from "../Pages/Dashboard/Cart/Cart";
+import UserHome from "../Pages/Dashboard/UserHome";
+import Review from "../Pages/Dashboard/Review";
 
 //   export korte hbe
   export const router = createBrowserRouter([
@@ -63,7 +65,16 @@ import Cart from "../Pages/Dashboard/Cart/Cart";
       {
         path:'cart',
         element:<Cart></Cart>
+      },
+      {
+        path:'userHome',
+        element:<UserHome></UserHome>
+      },
+      {
+        path:'review',
+        element: <Review></Review>
       }
+     
 
 
     ]

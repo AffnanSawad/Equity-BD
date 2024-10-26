@@ -12,7 +12,7 @@ import { router } from './Routes/Routes.jsx';
 import Providers from './Authentications/Providers/Providers.jsx';
 
 
-// tanstack query
+// set up tanstack query = documentation porle hbe.
 import {
   QueryClient,
   QueryClientProvider,
