@@ -5,6 +5,8 @@ import useAxiosSecure from "./useAxiosSecure";
 import { useContext } from "react";
 import { AuthContext } from "../Authentications/Providers/Providers";
 
+// using tenstack query ......
+
 const useCart = () => {
     const axiosSecure = useAxiosSecure();
     const { user} = useContext(AuthContext);

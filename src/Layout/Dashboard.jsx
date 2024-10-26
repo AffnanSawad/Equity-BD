@@ -5,6 +5,8 @@ import useCart from "../hooks/useCart";
 
 
 const Dashboard = () => {
+
+    // cart er length show koranor jnno.
     const [cart] = useCart();
 
     return (
@@ -33,10 +35,10 @@ const Dashboard = () => {
                             Add a Review</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/dashboard/bookings">
-                            <FaList></FaList>
-                            My Bookings</NavLink>
-                    </li>
+                                    <NavLink to="/dashboard/paymentHistory">
+                                        <FaList></FaList>
+                                        Payment History</NavLink>
+                                </li>
                     <div className="divider"></div>
                     <li>
                         <NavLink to="/">

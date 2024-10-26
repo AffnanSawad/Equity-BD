@@ -68,7 +68,7 @@ const ApartMentCard = ({item}) => {
         <div className="card-body">
           <h2 className="card-title font-bold">{name} </h2>
           <div className="flex my-5">
-          <p className="font-semibold text-xl"> Price: ${price} </p>
+          <p className="font-semibold text-xl"> Price:  $  {price}K </p>
           <p className="font-semibold text-xl"> Size: {size} </p>
           </div>
           

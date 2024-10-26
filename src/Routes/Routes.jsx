@@ -14,6 +14,8 @@ import Dashboard from "../Layout/Dashboard";
 import Cart from "../Pages/Dashboard/Cart/Cart";
 import UserHome from "../Pages/Dashboard/UserHome";
 import Review from "../Pages/Dashboard/Review";
+import Payment from "../Pages/Dashboard/Payment/Payment";
+import PaymentHistory from "../Pages/Dashboard/Payment/PaymentHistory/PaymentHistory";
 
 //   export korte hbe
   export const router = createBrowserRouter([
@@ -73,7 +75,15 @@ import Review from "../Pages/Dashboard/Review";
       {
         path:'review',
         element: <Review></Review>
-      }
+      },
+      {
+        path:'payment',
+        element: <Payment></Payment>
+      },
+      {
+        path: 'paymentHistory',
+        element: <PaymentHistory></PaymentHistory>
+      },
      
 
 

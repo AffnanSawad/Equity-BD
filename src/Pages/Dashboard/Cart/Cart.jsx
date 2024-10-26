@@ -4,6 +4,7 @@ import { FaTrashAlt } from "react-icons/fa";
 import useCart from "../../../hooks/useCart";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
+import { Link } from "react-router-dom";
 
 
 const Cart = () => {
@@ -17,7 +18,7 @@ const Cart = () => {
     const handleDelete = id => {
         Swal.fire({
             title: "Are you sure?",
-            text: "You won't be able to revert this!",
+            text: "You want to delete this!",
             icon: "warning",
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
@@ -29,6 +30,8 @@ const Cart = () => {
                 axiosSecure.delete(`/carts/${id}`)
                     .then(res => {
                         if (res.data.deletedCount > 0) {
+                            
+                            // auto load howar jno
                             refetch();
                             Swal.fire({
                                 title: "Deleted!",
@@ -46,7 +49,12 @@ const Cart = () => {
             <div className="flex justify-evenly mb-8">
                 <h2 className="text-4xl">Items: {cart.length}</h2>
                 <h2 className="text-4xl">Total Price: ${totalPrice}</h2>
+             
+                <Link to='/dashboard/payment'>
+                
                 <button className="btn btn-outline btn-accent ">Pay Now</button>
+                
+                </Link>
 
             </div>
             <div className="overflow-x-auto">

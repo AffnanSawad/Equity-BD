@@ -31,7 +31,10 @@ createRoot(document.getElementById('root')).render(
  
  {/* provider = Authentication */}
  <Providers>
+
+  {/* set up tanstack query = documentation porle hbe. */}
 <QueryClientProvider  client={queryClient}>
+
 
 <RouterProvider router={router} />
 
