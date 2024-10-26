@@ -4,12 +4,17 @@ import { AuthContext } from "../../../Authentications/Providers/Providers";
 import auth from "../../../firebase/firebse.config";
 import Swal from "sweetalert2";
 import { CgProfile } from "react-icons/cg";
+import useCart from "../../../hooks/useCart";
 
 
 const Navbar = () => {
 
   // import
   const {user,logOut} = useContext(AuthContext);
+ 
+
+  // counting add items in Dashboard
+  const [cart] = useCart()
 
 
   // handle logOut
@@ -165,11 +170,19 @@ const Navbar = () => {
 
           
        <Link>
-       <button className="btn btn-outline my-4 w-full">
-       <div className="flex mr-3 py-3">
-         <CgProfile className="mt-1 ml-3" /><li className="ml-2 mt-1"> Dashboard</li>
-         </div>
-       </button>
+      
+{/* // counting add items in Dashboard */}
+
+<Link to='/dashboard/cart'>
+
+<button className="btn btn-outline btn-accent  my-4 w-full ">
+  Dashboard
+  <div className="badge badge-secondary">+{cart.length} </div>
+</button>
+
+
+</Link>
+
        
        </Link>
         

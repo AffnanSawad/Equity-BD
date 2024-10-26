@@ -10,6 +10,8 @@ import Apartment from "../Pages/Apartment/Apartment";
 import LogIn from "../Authentications/LogIn/LogIn";
 import Signup from "../Authentications/Signup/Signup";
 import PrivateRoute from "../Authentications/PrivateRoute/PrivateRoute";
+import Dashboard from "../Layout/Dashboard";
+import Cart from "../Pages/Dashboard/Cart/Cart";
 
 //   export korte hbe
   export const router = createBrowserRouter([
@@ -50,4 +52,23 @@ import PrivateRoute from "../Authentications/PrivateRoute/PrivateRoute";
 
     ]
     },
+
+  // dashboard
+  {
+    path:'dashboard',
+    element: <Dashboard></Dashboard>,
+
+    children: [
+    
+      {
+        path:'cart',
+        element:<Cart></Cart>
+      }
+
+
+    ]
+  }
+
+
+
   ]);
