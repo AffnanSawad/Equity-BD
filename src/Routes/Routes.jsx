@@ -80,10 +80,10 @@ import PaymentHistory from "../Pages/Dashboard/Payment/PaymentHistory/PaymentHis
         path:'payment',
         element: <Payment></Payment>
       },
-      {
-        path: 'paymentHistory',
-        element: <PaymentHistory></PaymentHistory>
-      },
+      // {
+      //   path: 'paymentHistory',
+      //   element: <PaymentHistory></PaymentHistory>
+      // },
      
 
 

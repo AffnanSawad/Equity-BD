@@ -30,15 +30,11 @@ const ThreeBuildings = () => {
 </div>
 
 <div className="diff aspect-[16/9]">
-  <div className="diff-item-1">
+  <div>
     <img alt="daisy" src="https://i.ibb.co.com/3pZw7js/modern-apartment-with-comfortable-sofa-decor-generated-by-ai.jpg" />
+  
   </div>
-  <div className="diff-item-2">
-    <img
-      alt="daisy" className='h-[300px]'
-      src="https://i.ibb.co.com/1rFng2H/image3-6-768x1365-1.webp" />
-  </div>
-  <div className="diff-resizer"></div>
+
 </div>
 
 

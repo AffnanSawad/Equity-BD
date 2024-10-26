@@ -15,7 +15,7 @@ const Buildigs = () => {
 
     
             {/* card 1 */}
-            <div className="card card-compact bg-base-100 w-96 shadow-xl lg:ml-20">
+            <div className="card card-compact bg-base-100 w-96 shadow-xl  mb-4 lg:ml-20">
   <figure>
     <img
       src="https://i.ibb.co.com/7pWJcnw/Detached-singlefamily-home-in-a-suburban-neighborhood-810x540.jpg"
@@ -34,7 +34,7 @@ const Buildigs = () => {
 
 
 {/* card 2 */}
-<div className="card card-compact bg-base-100 w-96 shadow-xl lg:ml-20">
+<div className="card card-compact bg-base-100 w-96 shadow-xl mb-5 lg:ml-20">
   <figure>
     <img
       src="https://i.ibb.co.com/5k4sfdB/urban-architecture-office-building-business-600nw-1339962440.webp"
@@ -51,7 +51,7 @@ const Buildigs = () => {
 
 
 {/* card 3 */}
-<div className="card card-compact bg-base-100 w-96 shadow-xl lg:ml-20">
+<div className="card card-compact bg-base-100 w-96 shadow-xl mb-5 lg:ml-20">
   <figure>
     <img
       src="https://i.ibb.co.com/ZzKxRzv/industrial-park-factory-building-warehouse.jpg"
