@@ -21,7 +21,7 @@ const Apartment = () => {
    //  2. useEffect diye data Fetch kora.
   useEffect( ()=>{
 
-    fetch('http://localhost:5000/menu')
+    fetch('https://equity-bd-server.vercel.app/menu')
 
     .then(res=> res.json())
 

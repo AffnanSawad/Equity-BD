@@ -30,7 +30,7 @@ const ApartMentCard = ({item}) => {
         price
       }
       
-      axios.post('http://localhost:5000/carts',cartItem)
+      axios.post('https://equity-bd-server.vercel.app/carts',cartItem)
       .then(res=>{ 
         
         console.log(res.data)

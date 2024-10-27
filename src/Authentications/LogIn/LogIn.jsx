@@ -39,7 +39,7 @@ const LogIn = () => {
 
           const user = {email};
 
-          axios.post('http://localhost:5000/jwt', user)
+          axios.post('https://equity-bd-server.vercel.app/jwt', user)
           .then(res=>{
              
             console.log(res.data);
